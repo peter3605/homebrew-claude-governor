@@ -1,27 +1,27 @@
 class Governor < Formula
   desc "Machine-wide build and subagent budget for Claude Code sessions"
-  homepage "https://github.com/peter3605/claude-governor"
+  homepage "https://peter3605.github.io/claude-governor/"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-darwin-arm64"
-      sha256 "3967cc67cd2a16373be08d5989e84b0a75829904daeb499961bd1f60c300757d"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.5/governor-darwin-arm64"
+      sha256 "4297323609f1446efe91ecc5b370490700622d0a00c2336e9a80b72db55c5034"
     end
     on_intel do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-darwin-amd64"
-      sha256 "dcf2909b7ff6c51a7e581663ab664a95c68561fb51573fa11835516015cf7a86"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.5/governor-darwin-amd64"
+      sha256 "16b92a3e6e354fc0085096d7db9443944561f760c48f0ad427097d301be1cd36"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-linux-arm64"
-      sha256 "11b7418ce1fba8933896b11c98f64d5cf759a8bd3a63f602f25cb23d254a57a9"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.5/governor-linux-arm64"
+      sha256 "f07500413d934e26f7cc82992a6a757f8562ebc8ae61eda582346840090f5b08"
     end
     on_intel do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-linux-amd64"
-      sha256 "d602daf8cc1e8518d63b39306765a0fa9cb0d2de55c86c3c9acecea5244d980d"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.5/governor-linux-amd64"
+      sha256 "bb493f4460d48365857fc06c2ddc17b3fa038243a21a16a1f7a53f998952be88"
     end
   end
 
