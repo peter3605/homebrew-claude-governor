@@ -5,23 +5,23 @@ class Governor < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.2/governor-darwin-arm64"
-      sha256 "c2b90e01746f1267adb58ba48df86fb3c729acd6eb572ef08803fb9355442698"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-darwin-arm64"
+      sha256 "3967cc67cd2a16373be08d5989e84b0a75829904daeb499961bd1f60c300757d"
     end
     on_intel do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.2/governor-darwin-amd64"
-      sha256 "32d051aa8a849fdbf5753c225182b092441fd330fd9db24f4e9bb725c902768e"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-darwin-amd64"
+      sha256 "dcf2909b7ff6c51a7e581663ab664a95c68561fb51573fa11835516015cf7a86"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.2/governor-linux-arm64"
-      sha256 "17faa214e9df27ed66455fc99384ec29e520a9f2293795c8de9f9401df185890"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-linux-arm64"
+      sha256 "11b7418ce1fba8933896b11c98f64d5cf759a8bd3a63f602f25cb23d254a57a9"
     end
     on_intel do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.2/governor-linux-amd64"
-      sha256 "65e8d58527198829d54f8e188c59dd61746958bcd90297ea58cbd7a48954da49"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.4/governor-linux-amd64"
+      sha256 "d602daf8cc1e8518d63b39306765a0fa9cb0d2de55c86c3c9acecea5244d980d"
     end
   end
 
@@ -31,11 +31,15 @@ class Governor < Formula
 
   def caveats
     <<~EOS
-      This installs the binary only. To govern Claude Code sessions, run:
-        governor install
+      This installs the binary only. To govern Claude Code sessions, and after
+      every upgrade, run:
+        #{opt_bin}/governor install
+      By full path: once installed, governor on PATH can be the previous build.
       It writes a plugin to ~/.claude/skills/build-governor/, merges a statusLine key into
       ~/.claude/settings.json (after backing it up), and starts the daemon.
       Undo all of it with: governor uninstall
+      Something wrong? Run governor doctor --report and paste it into an issue:
+        https://github.com/peter3605/claude-governor/issues
     EOS
   end
 
