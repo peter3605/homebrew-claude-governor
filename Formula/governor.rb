@@ -5,23 +5,23 @@ class Governor < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.6/governor-darwin-arm64"
-      sha256 "78ae6a98f019a82e6a8cee08f5c537278b9e05471fd0a93a00ac86a32431bdb5"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.7/governor-darwin-arm64"
+      sha256 "fc38885daf5787b87d3bf5f564682b256273f273e1d02da0484ea16481301116"
     end
     on_intel do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.6/governor-darwin-amd64"
-      sha256 "d1e3034ffbbf5394f6f9657cf6f9cfa42ac6762238af140fb7aa3c8dfabc9c23"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.7/governor-darwin-amd64"
+      sha256 "32f86ca8702c97ba495faea256f82400f8d716301cd29524f140c37a82fc29ca"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.6/governor-linux-arm64"
-      sha256 "eb547f9fd097a6af5f1f93b6795ad6964e9ec3c8663f1305a587f7168f25ec92"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.7/governor-linux-arm64"
+      sha256 "fec9a0a75a3eff2978476aa77b7c6ec4a3f32335bd4711832522d333d03daa88"
     end
     on_intel do
-      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.6/governor-linux-amd64"
-      sha256 "fc2dc57f8497bfe498041de16b1185447d261cb1c065c25f98e2adc75169024a"
+      url "https://github.com/peter3605/claude-governor/releases/download/v0.1.7/governor-linux-amd64"
+      sha256 "d2cb18222a6e07e158aa57c34c648e8f0d6444dc6dbba9a6ed1ede28452cb1dd"
     end
   end
 
